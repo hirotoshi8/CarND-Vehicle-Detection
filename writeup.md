@@ -125,8 +125,8 @@ I provide a link to my final video output.  My pipeline recognize vehicles reaso
 Here's a [link to my video result](./output_images/project_video_out.mp4)
 
 
-#### 2. Filter for removing `False-positive`
-I describe how (and identify where in your code) I implemented a filter for false positives and a method for combining overlapping bounding boxes.
+#### 2. Filter for removing False-positive
+I describe how I implemented a filter for false positives and a method for combining overlapping bounding boxes.
 
 I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.
 
@@ -134,7 +134,7 @@ I then used `scipy.ndimage.measurements.label()` to identify individual blobs in
 
 Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
-### Here are the result of frame and their corresponding heatmaps:
+#### Here are the result of frame and their corresponding heatmaps:
 
 ![alt text][image5]
 
